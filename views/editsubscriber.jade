@@ -1,0 +1,14 @@
+extends layout
+
+block content
+	h1 Edit Subscriber
+	form(name='editsubscriber', method='post', action='/editsubscriber')
+		div
+			input#inputEmail(type='text', placeholder='Add Email', name='email' value='#{email}')
+		div
+			input#inputFirstName(type='text',placeholder='Add First Name', name='first_name' value='#{first_name}')
+		div
+			input#inputLastName(type='text',placeholder='Add Last Name', name='last_name' value='#{last_name}')
+		div
+			input(type='hidden', name='id' value='#{id}')
+			button#btnSubmit(type='submit') Subscribe

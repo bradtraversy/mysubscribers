@@ -1,0 +1,11 @@
+extends layout
+
+block content
+	h1 Subscribers
+	ul
+		each subscriber, i in subscribers
+			li 
+				a(href="/subscriber/#{subscriber.id}") #{subscriber.email}
+
+
+	a(href='/addsubscriber') Add Subscriber			

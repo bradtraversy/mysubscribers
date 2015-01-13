@@ -1,0 +1,16 @@
+extends layout
+
+block content
+	h1 Subscribe Now
+	form(name='addsubscriber', method='post', action='/addsubscriber')
+		div
+			input#inputEmail(type='text', placeholder='Add Email', name='email')
+		div
+			input#inputFirstName(type='text',placeholder='Add First Name', name='first_name')
+		div
+			input#inputLastName(type='text',placeholder='Add Last Name', name='last_name')
+		div
+			button#btnSubmit(type='submit') Subscribe
+	br
+	br		
+	a(href="/") Go Back
